@@ -49,7 +49,7 @@ Este proyecto consiste en la conversión de una **web estática en HTML y CSS** 
 
 ---
 
-## 📷 Capturas (opcional)
+## 📷 Capturas 
 
 ### Página de inicio
 
