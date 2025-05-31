@@ -1,0 +1,289 @@
+/*
+Theme Name: Raxen
+Author: Tu Nombre
+Description: Tema para entrega local
+Version: 1.0
+*/
+
+/*-------------GLOBALES--------*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  background-color: #002536;
+  color: #10f1fc;
+}
+
+header {
+  background-color: #00131c;
+  color: #10f1fc;
+  padding: 10px;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin: 0;
+}
+h2 {
+  font-size: 2.5rem;
+  margin: 0;
+}
+
+p {
+  font-size: 1.2rem;
+  margin: 10px 0;
+}
+/*-------------CABECERA----------*/
+nav {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
+  padding: 0 20px;
+}
+
+.logo img {
+  height: 50px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  grid-gap: 20px;
+}
+
+.nav-links li {
+  display: inline;
+}
+
+.nav-links a {
+  color: #10f1fc;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+  color: #e6007e;
+}
+
+.submenu {
+  position: relative;
+}
+
+.submenu ul {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #00131c;
+  list-style: none;
+  margin: 0;
+  display: none;
+  min-width: 150px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.submenu ul li a {
+  display: block;
+  font-size: 1rem;
+}
+
+.submenu:hover ul {
+  display: block;
+}
+
+/*-------------BANNER----------*/
+.banner {
+  background: url("./assets/img/banner.jpg") no-repeat center center/cover;
+  background-size: cover;
+  height: 700px;
+  display: flex;
+  align-items: center;
+  padding-left: 100px;
+  margin-bottom: 30px;
+  width: 100%;
+
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.banner-content {
+  text-align: left;
+}
+
+.contact-button {
+  font-family: "montserrat", sans-serif;
+  background-color: #10f1fc;
+  border: 2px;
+  border-radius: 25px;
+  padding: 10px 20px;
+  font-size: 18px;
+  cursor: pointer;
+}
+.contact-button:hover {
+  background-color: #e6007e;
+  color: #00131c;
+  transform: scale(1.05);
+}
+
+/*-------------Quienes somos----------*/
+
+/*------------seccion de servicios----------*/
+.services {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 20px;
+  background-color: #002536;
+}
+
+.service-card {
+  background-color: #00131c;
+  /* border: 1px solid #e6007e; */
+  border-radius: 10px;
+  padding: 20px;
+  margin: 10px;
+  width: 250px;
+  text-align: center;
+  color: #10f1fc;
+}
+
+.service-card img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+.service-card p {
+  margin-top: 10px;
+}
+
+/*-- seccion Proyectos --*/
+
+.h2-quien-somos {
+  text-align: center;
+  margin: 0;
+}
+
+.seccion-proyectos {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.proyecto {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #00131c;
+  /* border: 2px solid #e6007e; */
+  border-radius: 10px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.proyecto-texto {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-width: 280px;
+}
+
+.date p {
+  font-size: 0.3rem;
+  color: #005e63;
+  margin-bottom: auto;
+}
+
+.proyecto h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.proyecto p {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.proyecto-imagen {
+  flex: 1;
+  min-width: 280px;
+  display: flex;
+  justify-content: center;
+}
+
+.proyecto-imagen img {
+  width: auto;
+  height: 300px;
+  border-radius: 20px;
+  object-fit: contain;
+}
+
+.ver-mas-button {
+  font-family: "Montserrat", sans-serif;
+  background-color: #10f1fc;
+  border: none;
+  border-radius: 25px;
+  padding: 10px 20px;
+  font-size: 18px;
+  cursor: pointer;
+  color: #00131c;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.ver-mas-button:hover {
+  background-color: #e6007e;
+  transform: scale(1.05);
+}
+
+/*------------footer----------*/
+
+footer {
+  background-color: #00131c;
+  color: #10f1fc;
+  padding: 20px 0;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+.footer-content {
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-copyRight {
+  font-size: 0.75rem;
+  opacity: 0.7;
+}
+
+.footer-section img {
+  height: 50px;
+  margin-bottom: 10px;
+}
+
+.footer-section p {
+  margin: 10px 0;
+}
+
+.socials a {
+  color: #10f1fc;
+  margin: 0 10px;
+  font-size: 1.5rem;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.socials a:hover {
+  color: #e6007e;
+}
